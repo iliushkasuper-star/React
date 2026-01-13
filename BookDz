@@ -1,0 +1,18 @@
+ mystyle.backgroundColor = "red"
+        let div = document.getElementById("main")
+        const root = ReactDOM.createRoot(div)
+        root.render(
+        <div className={testclass}>
+        <h2 style = {aboutstyle}> <center>Кровавый меридиан<br></br>
+       Автор -  Чарльз Кормак Маккарти <br></br>
+       Жанр -  Вестерн <br></br>
+        Страниц - 480 <br></br>
+        Рецензии - LiveLib: 4/5, Литрес 4.5/5
+         
+         <img src="https://readrate.com/img/pictures/basic/283/283234/2832340/w816-ef4bad4a.jpg" alt=""/>
+        </center>
+        </h2>
+       
+        
+        </div>
+    )
