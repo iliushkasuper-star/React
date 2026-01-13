@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(241, 249, 246);
+        }
+        .dark{
+            background-color: rgb(51, 56, 55);
+            color: azure;
+            width: 230px;
+            
+        }
+        .light{
+            background-color: rgb(241, 249, 246);
+            color: black;
+        
+        }
+        img{
+            margin-top: 80px;
+            width: 700px;
+            margin-left: 150px;
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <div id="main"></div>
+
+    <script type="text/babel">
+        const testclass = "light"
+        let mystyle={
+            backgroundColor: "blue",
+            fontFamily: "Verdana",
+            border: "2px solid black",
+            borderRadius:"10px",
+            marginLeft:"10px"
+        }
+        let aboutstyle= {
+            backgroundColor: "purple",
+            fontFamily: "Verdana",
+            border: "2px solid black",
+            borderRadius:"10px",
+            marginLeft:"10px",
+            width:"1100px",
+            color:"white",
+            height: "1900px"
+        }
+        
+
+    //     mystyle.backgroundColor = "red"
+    //     let div = document.getElementById("main")
+    //     const root = ReactDOM.createRoot(div)
+    //     root.render(
+    //     <div className={testclass}>
+    //     <h2 style = {aboutstyle}> <center>Панченко Илья<br></br>
+    //     +380683125324 <br></br>
+    //     iliushkasuper@gmail.com </center>
+    //      <img src="https://avatarko.ru/img/kartinka/1/multfilm_pingviny.jpg" alt=""/>
+    //     </h2>
+       
+        
+    //     </div>
+    // )
+    //     mystyle.backgroundColor = "red"
+    //     let div = document.getElementById("main")
+    //     const root = ReactDOM.createRoot(div)
+    //     root.render(
+    //     <div className={testclass}>
+    //     <h2 style = {aboutstyle}> <center>Токио<br></br>
+    //     Население: 3800000 <br></br>
+    //      </center>
+    //      <img src="https://www.nippon.com/ru/ncommon/contents/japan-data/2742431/2742431.jpg" alt=""/>
+    //      <img src="https://i.stena.ee/20/2023-02-04_084103.jpg" alt=""/>
+    //      <img src="https://viewout.ru/0010/tokio.jpg" alt=""/>
+    //     </h2>
+       
+        
+    //     </div>
+    // )
+    //   mystyle.backgroundColor = "red"
+    //     let div = document.getElementById("main")
+    //     const root = ReactDOM.createRoot(div)
+    //     root.render(
+    //     <div className={testclass}>
+    //     <h2 style = {aboutstyle}> <center>Кровавый меридиан<br></br>
+    //    Автор -  Чарльз Кормак Маккарти <br></br>
+    //    Жанр -  Вестерн <br></br>
+    //     Страниц - 480 <br></br>
+    //     Рецензии - LiveLib: 4/5, Литрес 4.5/5
+         
+    //      <img src="https://readrate.com/img/pictures/basic/283/283234/2832340/w816-ef4bad4a.jpg" alt=""/>
+    //     </center>
+    //     </h2>
+       
+        
+    //     </div>
+    // )
+     mystyle.backgroundColor = "red"
+        let div = document.getElementById("main")
+        const root = ReactDOM.createRoot(div)
+        root.render(
+        <div className={testclass}>
+        <h2 style = {aboutstyle}> <center>AC/DC<br></br>
+       Участники - Ангус Янг,Браян Джонсон <br></br>
+       Жанр -  Вестерн <br></br>
+        Страниц - 480 <br></br>
+        Рецензии - LiveLib: 4/5, Литрес 4.5/5
+         
+         <img src="https://readrate.com/img/pictures/basic/283/283234/2832340/w816-ef4bad4a.jpg" alt=""/>
+        </center>
+        </h2>
+       
+        
+        </div>
+    )
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
