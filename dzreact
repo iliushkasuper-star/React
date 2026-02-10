@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card React</title>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+        }
+
+        #card {
+            width: 300px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            position: relative;
+        }
+
+        #action {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #ff5252;
+            color: #fff;
+            padding: 4px 8px;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+
+        #main {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        #forever,
+        #vesy,
+        #rozprodah {
+            width: 22px;
+            margin-right: 5px;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+
+        #dostavka {
+            color: green;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        #korzina {
+            width: 30px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        #free {
+            color: #ff9800;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+    </style>
+
+    <script type="text/babel">
+        function Card1(props) {
+            return (
+                <div id="card">
+                    <p id="action">{props.action}</p>
+
+                    <img id="forever" src={props.img1} />
+                    <img id="vesy" src={props.img2} />
+                    <img id="rozprodah" src={props.img4} />
+
+                    <img id="main" src={props.img3} />
+
+                    <h2>{props.name}</h2>
+                    <h2>{props.price}</h2>
+
+                    <img id="korzina" src={props.img6} />
+
+                    <p id="dostavka">{props.dostavka}</p>
+
+                    <img id="smart" src={props.img5} />
+                    <p id="B">{props.b}</p>
+                    <p id="free">{props.free}</p>
+                </div>
+            );
+        }
+
+        function CardGroup() {
+            return (
+                <div id="container">
+                    <Card1
+                        action="Акція"
+                        img1="4386692.png"
+                        img2="2.png"
+                        img3="3.webp"
+                        img4="4.png"
+                        name="Ноутбук Acer Nitro V 15 ANV15-52-59XE"
+                        price="51 999 ₴"
+                        img6="6.png"
+                        dostavka="Безкоштовна доставка"
+                        img5="5.png"
+                        b="Б"
+                        free="+499 бонусних ₴"
+                    />
+                </div>
+            );
+        }
+    </script>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        ReactDOM.createRoot(document.getElementById("root")).render(
+            <CardGroup />
+        );
+    </script>
+</body>
+</html>
